@@ -1,7 +1,9 @@
 import 'dart:io';
 
+import 'package:dart_basics/IceCream.dart';
+
 void main(List<String> arguments) {
- excercise6();
+ nullability();
  
 }
 
@@ -216,6 +218,22 @@ void matExample(){
     print("El resultado es: $a");
     a-=b;
     a*=b;
+}
+
+void nullability(){
+  String? name = "Yahel";
+  name = "";
+  name = null;
+
+  String example2 = name ?? "Invitado";
+  name ??="Pepe";
+ if(name!=null){
+  print("hola $name");
+ }
+
+  int? example = 13;
+  example = null;
+
 }
 
 void exercise1(){
